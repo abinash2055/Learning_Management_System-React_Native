@@ -1,9 +1,0 @@
-// To run the expo Project 
-    1. Go to project Folder
-    2. Go to inside Client Folder
-    3. Open Terminal
-    4. Type {"npm run start"}
-
-
-    i.e., 
-        D:\CODINGS\REACT NATIVE\LEARNING MANAGEMENT SYSTEM\client>npm run start

@@ -1,4 +1,11 @@
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
+import { 
+    View, 
+    Text, 
+    StyleSheet, 
+    TextInput, 
+    TouchableOpacity
+} from 'react-native'
+
 import React, { useRef, useState } from 'react'
 import Button from '@/components/button/button';
 import { router } from 'expo-router';
@@ -52,15 +59,20 @@ export default function VerifyAccountScreen() {
                     title="Submit"
                     onPress={handleSubmit} />
             </View>
-            <TouchableOpacity onPress={() => router.back()}>
-                <Text style={{ 
-                    fontSize: 20,
-                    paddingTop: 20,
-                    fontWeight: "500",
-                 }}>
-                    Go back to sign In 
-                </Text>
-            </TouchableOpacity>
+            <View style={styles.loginLink}>
+                    <Text style={[styles.backText, {
+                      fontFamily: "Nunito_400Regular"
+                    }]}>
+                      Back To ?
+                    </Text>
+                    <TouchableOpacity onPress={() => router.back()}>
+                      <Text
+                        style={[styles.loginText, {
+                          fontFamily: "Nunito_600SemiBold,"
+                        }]}
+                      >Sign In</Text>
+                    </TouchableOpacity>
+                  </View>
         </View>
     )
 }
@@ -101,5 +113,20 @@ const styles = StyleSheet.create({
         marginRight: 10,
         borderRadius: 10,
         fontSize: 20,
-    }
+    },
+
+    loginLink: {
+        flexDirection: "row",
+        marginTop: 30,
+    },
+
+    loginText: {
+        color: "#3876EE",
+        marginLeft: 5,
+        fontSize: 16,
+    },
+
+    backText: {
+        fontSize: 16,
+    },
 })
