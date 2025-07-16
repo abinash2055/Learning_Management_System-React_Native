@@ -1,24 +1,31 @@
-// To run the expo Project 
+
+// *************************  To run the expo Project  *****************************************
     1. Go to project Folder
     2. Go to inside Client Folder
     3. Open Terminal
     4. Type {"npm run start"}
 
-
     i.e., 
         D:\CODINGS\REACT NATIVE\LEARNING MANAGEMENT SYSTEM\client>npm run start
 
-// For Server
+
+
+// *************************  For Server  *****************************************
     1. MongoDB
         i. username ::: abinashnathpandey
         ii. password :: u8jwC1g79BaigikX
     2. IP Address
         i. Address:: 0.0.0.0/0
 
-// Cloudinary
+
+
+// *************************  Cloudinary  *****************************************
     1. Cloud Name :: dagybmwdx
     2. API Key ::::: 616374433842916
     3. API Secret :: XGQaUDb6VZDnJE3NgCHjG8ZVoOo
 
 
 
+###### TIMESTAMP
+## CLIENT :: 2.03.34
+## SERVER ::  1.33.34
